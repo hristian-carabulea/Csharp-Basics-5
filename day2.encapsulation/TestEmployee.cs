@@ -16,10 +16,13 @@ namespace MyFirstProject.day2.encapsulation
 
             Alex.SetSalary(90000);
             //Alex.bonus = 20000;
+            //Console.WriteLine("Alex's bonus is : " + Alex.GetBonus());
+            Console.WriteLine("Alex's bonus is : " + Alex.Bonus);
             Alex.CalculateTotalPay();
 
             Lynda.SetSalary(160000);
             //Lynda.bonus = 20000;
+            Console.WriteLine("Lynda's bonus is : " + Lynda.Bonus);
             Lynda.CalculateTotalPay();
         }
     }

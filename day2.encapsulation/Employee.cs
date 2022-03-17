@@ -13,9 +13,19 @@ namespace MyFirstProject.day2.encapsulation
 
     class Employee
     {
-        private double salary;
-        private double bonus;
+        //private double salary;
+        double salary; // by default it is assumed that the variable is private
+        // Can display the bonus. But cannot change it, only set it.
+        public double Bonus { get; private set; }
 
+        /// <summary>
+        /// giving access to private bonus
+        /// </summary>
+        /// <returns></returns>
+        //public double GetBonus()
+        //{
+        //    return Bonus;
+        //}
         public void SetSalary(double salary)
         {
             if (salary < 40000 || salary > 150000)
@@ -23,17 +33,17 @@ namespace MyFirstProject.day2.encapsulation
                 Console.WriteLine(" ");
                 Console.WriteLine("Please check salary");
                 this.salary = 0;
-                this.bonus = 0;
+                this.Bonus = 0;
             }
             else
             {
                 this.salary = salary;
-                this.bonus = this.salary * 0.20;
+                this.Bonus = this.salary * 0.20;
             }
         }
         public void CalculateTotalPay()
         {
-            double totalPay = salary + bonus;
+            double totalPay = salary + Bonus;
             //Console.WriteLine(" ");
             Console.WriteLine("Total Pay = " + totalPay);
         }

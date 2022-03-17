@@ -15,15 +15,21 @@
     <Compile Remove="day1.examples\Exercise3.cs" />
     <Compile Remove="day2.constructor\SmallBox.cs" />
     <Compile Remove="day2.constructor\TestSmallBox.cs" />
+    <Compile Remove="day2.encapsulation\Employee.cs" />
+    <Compile Remove="day2.encapsulation\TestEmployee.cs" />
     <Compile Remove="day2.examples\Box.cs" />
     <Compile Remove="day2.examples\Employee.cs" />
     <Compile Remove="day2.examples\TestBox.cs" />
     <Compile Remove="day2.examples\TestEmployee.cs" />
+    <Compile Remove="day2.overloading\Box.cs" />
+    <Compile Remove="day2.overloading\TestBox.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="day2.constructor\" />
+    <Folder Include="day2.encapsulation\" />
     <Folder Include="day2.examples\" />
+    <Folder Include="day2.overloading\" />
   </ItemGroup>
 
 </Project>
