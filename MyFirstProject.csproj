@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="day1.examples\ExampleFor.cs" />
+    <Compile Remove="day1.examples\ExampleIf.cs" />
+    <Compile Remove="day1.examples\ExampleOne.cs" />
+    <Compile Remove="day1.examples\ExampleSwitchCase.cs" />
+    <Compile Remove="day1.examples\Exercise1.cs" />
+    <Compile Remove="day1.examples\Exercise2.cs" />
+    <Compile Remove="day1.examples\Exercise3.cs" />
+    <Compile Remove="day2.constructor\SmallBox.cs" />
+    <Compile Remove="day2.constructor\TestSmallBox.cs" />
+    <Compile Remove="day2.examples\Box.cs" />
+    <Compile Remove="day2.examples\Employee.cs" />
+    <Compile Remove="day2.examples\TestBox.cs" />
+    <Compile Remove="day2.examples\TestEmployee.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="day2.constructor\" />
+    <Folder Include="day2.examples\" />
+  </ItemGroup>
+
+</Project>
